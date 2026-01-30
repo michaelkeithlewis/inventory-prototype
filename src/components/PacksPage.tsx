@@ -7,10 +7,10 @@ import { RotateCw } from 'lucide-react';
 
 export function PacksPage() {
   const [tags, setTags] = useState<Tag[]>(initialTags);
-  const [cases, setCases] = useState<CaseItem[]>(initialCases);
+  const [cases] = useState<CaseItem[]>(initialCases);
   const [filterTagIds, setFilterTagIds] = useState<string[]>([]);
   const [manageTagsOpen, setManageTagsOpen] = useState(false);
-  const [addedToPackIds, setAddedToPackIds] = useState<Set<string>>(new Set());
+  const [, setAddedToPackIds] = useState<Set<string>>(new Set());
 
   const onAddAllFiltered = (caseIds: string[]) => {
     setAddedToPackIds((prev) => new Set([...prev, ...caseIds]));

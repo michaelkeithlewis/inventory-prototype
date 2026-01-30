@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import type { Tag } from '../types/case';
 import { TAG_COLOR_CLASSES } from '../utils/tagColors';
 
